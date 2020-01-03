@@ -1,0 +1,21 @@
+.tarifsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inconsolata';
+}
+
+.transmissionTable, .freinageCableTable, .freinageHydrauliqueTable, .roueTable, .montageCadre, .moyeu, .poseAccessoire, .graissage {
+  margin-top: 2em;
+}
+
+.graissage {
+  margin-bottom: 2em;
+}
+
+#transmissionTarifs, #freinageCableTarifs {
+  width: 30em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

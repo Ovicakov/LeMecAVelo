@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Nunito&display=swap');
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+  background-color: black;
+  font-family: 'Inconsolata';
+}
+
+.contactFooter, .facebookLogoFooter, .instagramLogoFooter {
+  color: white;
+  margin: 0 2em 0 2em;
+}
+
+.contactFooter {
+  display: flex;
+}
+
+.facebookLogoFooter {
+  display: flex;
+}
+
+.instagramLogoFooter {
+  display: flex;
+}

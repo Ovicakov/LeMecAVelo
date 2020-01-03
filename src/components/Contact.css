@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Nunito&display=swap');
+
+.containerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  font-size: 2.5em;
+  font-family: 'Inconsolata', sans-serif;
+  margin-top: 150px;
+}
