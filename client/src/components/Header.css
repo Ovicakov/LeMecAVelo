@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Nunito&display=swap');
+
+.headerContainer {
+  display:flex;
+  width: 100%;
+  background-color: #1d1d1b;
+  position: fixed;
+  position: relative;
+  justify-content: center;
+  height: 13vh;
+}
+
+.header {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  font-family: 'Inconsolata';
+}
+
+.tarif, .accueil, .contact {
+  color:white;
+  padding: 43px 60px;
+  margin: 0 2em;
+  text-decoration: none;
+}
+
+.tarif:hover, .accueil:hover, .contact:hover {
+  background-color: white;
+  color: #1d1d1b;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  height: 5em;
+  margin-right: -8em;
+  margin-left: 5em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 970px) {
+  .headerContainer {
+    height: 8vh;
+    justify-content: center;
+  }
+
+  .logo {
+    display: flex;
+    height: 3em;
+    margin-right: -8em;
+    margin-left: 2em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .tarif, .accueil, .contact {
+    color:white;
+    padding: 10px 0;
+    margin: 0 2em;
+    text-decoration: none;
+    font-size: large;
+  }
+
+  .tarif:hover, .accueil:hover, .contact:hover {
+    display: none;
+  }
+}
+
+.burgerMenu {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 550px) {
+  .tarif, .accueil, .contact {
+    color:black;
+    padding: 43px 60px;
+    margin: 0 2em;
+  }
+
+  .header {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .logo {
+    margin: 3px 0 3px 10px;
+  }
+
+  .headerContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+

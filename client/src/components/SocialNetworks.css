@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Nunito&display=swap');
+
+.socialNetworksContainer {
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Nunito', sans-serif;
+}
+
+Button {
+  width: 80%;
+}
+
+@media (max-width: 970px) {
+  .socialNetworksContainer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  .socialNetworksContainer {
+    font-size: small;
+  }
+}
