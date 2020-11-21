@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
 import { debounce } from "debounce";
+import img1 from '../components/images/transmission.png'
+import img2 from '../components/images/cadre.png'
+import img3 from '../components/images/freins.png'
+import img4 from '../components/images/roue.webp'
+import img5 from '../components/images/frein_cable.png'
+import img6 from '../components/images/moyeu.png'
+import img7 from '../components/images/lumière.png'
+import img8 from '../components/images/graissage.png'
 import './Tarifs.css'
 
 const Tarifs = () => {
@@ -156,7 +164,10 @@ const Tarifs = () => {
         :
         <div className="transmission">
           <table>
-            <h2>Transmission</h2>
+            <div className="title">
+              <h2>Transmission</h2>
+              <img src={img1} style={{ height: '30px', marginLeft: '10px' }} />
+            </div>
             <tbody>
               {transmission.map(item => {
                 return (
@@ -171,14 +182,14 @@ const Tarifs = () => {
           </table>
         </div>}
 
-      {/* --------- FREINAGE A CABLE TABLE --------------- */}
+      {/* --------- MONTAGE CADRE --------------- */}
       {dimensions.width < 550 ?
         <div style={{ width: '95%' }}>
-          <Button color="secondary" onClick={handleCollapseFreinageCable} style={{ marginBottom: '1rem' }}>Freinage à câble</Button>
-          <Collapse isOpen={isOpenFreinageCable}>
+          <Button color="secondary" onClick={handleCollapseMontageCadre} style={{ marginBottom: '1rem' }}>Montage cadre</Button>
+          <Collapse isOpen={isOpenMontageCadre}>
             <Card>
               <CardBody>
-                {freinageCable.map(item => {
+                {montageCadre.map(item => {
                   return (
                     <tr>
                       <td>{item.type}</td>
@@ -192,11 +203,14 @@ const Tarifs = () => {
           </Collapse>
         </div>
         :
-        <div className="freinageCableTable">
+        <div className="montageCadre">
           <table>
-            <h2>Freinage à câble</h2>
+            <div className="title">
+              <h2>Montage cadre et réglage</h2>
+              <img src={img2} style={{ height: '30px', marginLeft: '10px' }} />
+            </div>
             <tbody>
-              {freinageCable.map(item => {
+              {montageCadre.map(item => {
                 return (
                   <tr>
                     <td>{item.type}</td>
@@ -232,7 +246,10 @@ const Tarifs = () => {
         :
         <div className="freinageHydrauliqueTable">
           <table>
-            <h2>Freinage hydraulique</h2>
+            <div className="title">
+              <h2>Freinage hydraulique</h2>
+              <img src={img3} style={{ height: '30px', marginLeft: '10px' }} />
+            </div>
             <tbody>
               {freinageHydraulique.map(item => {
                 return (
@@ -270,7 +287,10 @@ const Tarifs = () => {
         :
         <div className="roueTable">
           <table>
-            <h2>Roue</h2>
+            <div className="title">
+              <h2>Roue</h2>
+              <img src={img4} style={{ height: '30px', marginLeft: '10px' }} />
+            </div>
             <tbody>
               {roue.map(item => {
                 return (
@@ -285,14 +305,14 @@ const Tarifs = () => {
           </table>
         </div>}
 
-      {/* --------- MONTAGE CADRE --------------- */}
+      {/* --------- FREINAGE A CABLE TABLE --------------- */}
       {dimensions.width < 550 ?
         <div style={{ width: '95%' }}>
-          <Button color="secondary" onClick={handleCollapseMontageCadre} style={{ marginBottom: '1rem' }}>Montage cadre</Button>
-          <Collapse isOpen={isOpenMontageCadre}>
+          <Button color="secondary" onClick={handleCollapseFreinageCable} style={{ marginBottom: '1rem' }}>Freinage à câble</Button>
+          <Collapse isOpen={isOpenFreinageCable}>
             <Card>
               <CardBody>
-                {montageCadre.map(item => {
+                {freinageCable.map(item => {
                   return (
                     <tr>
                       <td>{item.type}</td>
@@ -306,11 +326,14 @@ const Tarifs = () => {
           </Collapse>
         </div>
         :
-        <div className="montageCadre">
+        <div className="freinageCableTable">
           <table>
-            <h2>Montage cadre et réglage</h2>
+            <div className="title">
+              <h2>Freinage à câble</h2>
+              <img src={img5} style={{ height: '30px', marginLeft: '10px' }} />
+            </div>
             <tbody>
-              {montageCadre.map(item => {
+              {freinageCable.map(item => {
                 return (
                   <tr>
                     <td>{item.type}</td>
@@ -346,7 +369,10 @@ const Tarifs = () => {
         :
         <div className="moyeu">
           <table>
-            <h2>Moyeu</h2>
+            <div className="title">
+              <h2>Moyeu</h2>
+              <img src={img6} style={{ height: '30px', marginLeft: '10px' }} />
+            </div>
             <tbody>
               {moyeu.map(item => {
                 return (
@@ -384,7 +410,10 @@ const Tarifs = () => {
         :
         <div className="poseAccessoire">
           <table>
-            <h2>Pose accessoire</h2>
+            <div className="title">
+              <h2>Pose accessoire</h2>
+              <img src={img7} style={{ height: '30px', marginLeft: '10px' }} />
+            </div>
             <tbody>
               {poseAccessoire.map(item => {
                 return (
@@ -422,7 +451,10 @@ const Tarifs = () => {
         :
         <div className="graissage">
           <table>
-            <h2>Graissage</h2>
+            <div className="title">
+              <h2>Graissage</h2>
+              <img src={img8} style={{ height: '30px', marginLeft: '10px' }} />
+            </div>
             <tbody>
               {graissage.map(item => {
                 return (

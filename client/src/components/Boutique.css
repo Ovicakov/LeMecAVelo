@@ -1,0 +1,27 @@
+.cardsContent {
+  display: flex;
+  justify-content: space-around;
+  width: 40rem;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-img-top {
+  box-sizing: content-box;
+  width: 50%;
+}
+
+.textDescription {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  margin: 0;
+}

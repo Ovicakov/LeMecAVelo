@@ -41,6 +41,8 @@ const Header = () => {
             <li><Link to='/' className='accueil'>Accueil</Link></li>
             <li><Link to='/Tarifs' className='tarif'>Tarifs</Link></li>
             <li><Link to='/Contact' className='contact'>Contact</Link></li>
+            <li><Link to='/Boutique' className='contact'>Boutique</Link></li>
+            <li><Link to='/Admin' className='contact'>Admin</Link></li>
           </ul>
         </>
         :
@@ -66,6 +68,8 @@ const Header = () => {
               <li><Link to='/' className='accueil'>Accueil</Link></li>
               <li><Link to='/Tarifs' className='tarif'>Tarifs</Link></li>
               <li><Link to='/Contact' className='contact'>Contact</Link></li>
+              <li><Link to='/Boutique' className='contact'>Boutique</Link></li>
+              <li><Link to='/Admin' className='contact'>Admin</Link></li>
             </ul>
           </CheeseburgerMenu>
         </>

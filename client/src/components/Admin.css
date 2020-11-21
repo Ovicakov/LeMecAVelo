@@ -1,0 +1,29 @@
+.Admin {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+
+.titreForm {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionForm {
+  margin: 2rem;
+}
+
+.textDescriptionForm {
+  display: flex;
+  flex-direction: column;
+  width: 81rem;
+}
+
+.photoLinkForm {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+

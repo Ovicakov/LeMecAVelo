@@ -1,13 +1,18 @@
 .tarifsContainer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 40px 40px 40px 100px;
+  justify-content: space-around;
+  /* flex-direction: column;
   align-items: center;
-  font-family: 'Inconsolata';
+  font-family: 'Inconsolata'; */
 }
 
-.transmissionTable, .freinageCableTable, .freinageHydrauliqueTable, .roueTable, .montageCadre, .moyeu, .poseAccessoire, .graissage {
+/* .transmissionTable, .freinageCableTable, .freinageHydrauliqueTable, .roueTable, .montageCadre, .moyeu, .poseAccessoire, .graissage {
   margin-top: 2em;
-}
+} */
 
 .graissage {
   margin-bottom: 2em;
@@ -18,4 +23,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+
+.title {
+  display: flex;
+  align-items: center;
 }
