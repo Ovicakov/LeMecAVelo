@@ -7,7 +7,6 @@ export default function Boutique() {
 
   const [article, setArticle] = useState([])
   const [categorie, setCategorie] = useState([])
-  const [artByCat, setArtByCat] = useState([])
 
   const articleByCat = (e) => {
     axios.get(`http://localhost:4000/article/getCatId/${e.target.value}`)
@@ -28,6 +27,7 @@ export default function Boutique() {
       {description}
     </p>
   )
+
 
   return (
     <div className="Boutique">

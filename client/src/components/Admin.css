@@ -1,11 +1,10 @@
 .Admin {
-  height: 70vh;
   display: flex;
   flex-direction: column;
   margin-left: 5rem;
 }
 
-.titreForm {
+.addArticle {
   margin: 2rem;
   display: flex;
   flex-direction: column;
@@ -25,5 +24,29 @@
   margin: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.cardsContentAdmin {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.textDescriptionAdmin {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.textCard {
+  cursor: pointer;
+}
+
+.carte {
+  display: flex;
+  flex-direction: row;
 }
 

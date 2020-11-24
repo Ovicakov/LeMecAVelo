@@ -1,7 +1,11 @@
+.Card {
+  margin: 20px;
+}
+
 .cardsContent {
   display: flex;
-  justify-content: space-around;
-  width: 40rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cardsContainer {
@@ -19,9 +23,9 @@
 
 .textDescription {
   width: 200px;
-  white-space: nowrap;
+  /* white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
   margin: 0;
 }
