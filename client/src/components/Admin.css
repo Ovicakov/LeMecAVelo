@@ -1,17 +1,26 @@
 .Admin {
   display: flex;
-  flex-direction: column;
   margin-left: 5rem;
+  margin-top: 1rem;
 }
 
 .addArticle {
-  margin: 2rem;
   display: flex;
   flex-direction: column;
+  width: 30rem;
+}
+
+.titleReal {
+  margin-bottom: 2rem;
+}
+
+.titleAddArticle, .carsTitleDelete {
+  font-weight: 900;
+  margin-bottom: 2rem;
 }
 
 .descriptionForm {
-  margin: 2rem;
+  margin-bottom: 2rem;
 }
 
 .textDescriptionForm {
@@ -21,9 +30,7 @@
 }
 
 .photoLinkForm {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .cardsContentAdmin {
@@ -48,5 +55,20 @@
 .carte {
   display: flex;
   flex-direction: row;
+}
+
+.articleCategory {
+  margin-bottom: 2rem;
+}
+
+.addArticleButton {
+  width: 100%;
+}
+
+.deleteCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 55rem;
 }
 

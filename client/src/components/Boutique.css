@@ -12,8 +12,13 @@
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.title {
+  margin-right: 1rem;
 }
 
 .card-img-top {

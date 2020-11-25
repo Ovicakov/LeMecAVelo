@@ -32,7 +32,7 @@ export default function Boutique() {
   return (
     <div className="Boutique">
       <div className="cardsContainer">
-        <p className="title">Choisissez votre catégorie :</p>
+        <span className="title">Choisissez votre catégorie :</span>
         <select className="selectCards" onChange={(e) => articleByCat(e)}>
           <option>Choisissez votre catégorie</option>
           {categorie && categorie.map((categorie) =>

@@ -47,7 +47,8 @@ router.route(['/:id', '/'])
   })
   .put(function (req, res) {
     const formData = req.body;
-    connection.query(`UPDATE article SET ? WHERE art_id= ${req.params.id}`, [formData], err => {
+    const articleId = req.params.id
+    connection.query(`UPDATE article SET ? WHERE art_id =`, [formData, articleId], err => {
       if (err) {
         res.status(500).send("Erreur lors de la modification d'un article");
       } else {
