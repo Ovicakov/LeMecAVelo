@@ -13,6 +13,7 @@ export default function Admin() {
   const [categorie, setCategorie] = useState([])
   const [article, setArticle] = useState([])
   const [categoryId, setCategoryId] = useState()
+  const [price, setPrice] = useState()
 
   // DELETE
   const [articleByCategory, setArticleByCategory] = useState([])
@@ -60,10 +61,16 @@ export default function Admin() {
     setImageLink(value)
   }
 
+  const onChangePrice = (event) => {
+    const { value } = event.target
+    setPrice(value)
+  }
+
   const handleSubmitAdd = () => {
     axios.post('http://localhost:4000/article/', {
       art_name: title,
       art_description: description,
+      art_price: price,
       art_photo: imageLink,
       art_cat_id: categoryId,
     })
@@ -153,6 +160,10 @@ export default function Admin() {
         <div className="photoLinkForm">
           <label>Lien de l'image :</label>
           <input placeholder="Lien de l'image" value={imageLink} onChange={onChangeImageLink} />
+        </div>
+        <div className="priceDiv">
+          <label>Prix de l'article :</label>
+          <input placeholder="Prix de l'article" value={price} onChange={onChangePrice} />
         </div>
         <div className="articleCategory">
           <label>Catégorie de l'article :</label>

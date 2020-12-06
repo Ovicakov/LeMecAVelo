@@ -2,12 +2,14 @@
   display: flex;
   margin-left: 5rem;
   margin-top: 1rem;
+  min-height: 75vh;
 }
 
 .addArticle {
   display: flex;
   flex-direction: column;
   width: 30rem;
+  padding-bottom: 2rem;
 }
 
 .titleReal {
@@ -30,6 +32,10 @@
 }
 
 .photoLinkForm {
+  margin-bottom: 2rem;
+}
+
+.priceDiv {
   margin-bottom: 2rem;
 }
 

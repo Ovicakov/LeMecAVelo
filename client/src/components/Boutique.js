@@ -28,7 +28,6 @@ export default function Boutique() {
     </p>
   )
 
-
   return (
     <div className="Boutique">
       <div className="cardsContainer">
@@ -47,6 +46,7 @@ export default function Boutique() {
             value={article.art_id}
             name={article.art_name}
             photo={article.art_photo}
+            price={article.art_price}
             description={renderDescription(article.art_description)}
           />
         ))}
